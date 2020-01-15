@@ -396,13 +396,12 @@
                                                         </label>
                                                     </p>
                                                 </ol>
-                                                <br>
+                                            </div>
+                                        </div>
+                                                <a href="<?= base_url('auth/logout'); ?>" class="btn waves-effect waves-light">Logout</a>
                                                 <button class="btn waves-effect waves-light right" type="submit">Submit
                                                     <i class="material-icons right">send</i>
                                                 </button>
-                                                <a href="<?= base_url('auth/logout'); ?>" class="btn waves-effect waves-light right">Logout</a>
-                                            </div>
-                                        </div>
                                     </form>
                                     <?php elseif(!$target): ?>
                                     <?php redirect('auth/logout'); ?>
