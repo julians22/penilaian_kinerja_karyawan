@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Jan 2020 pada 07.25
+-- Waktu pembuatan: 15 Jan 2020 pada 10.13
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -130,7 +130,8 @@ INSERT INTO `employe` (`id`, `nik`, `emp_name`, `departement`, `divisi`, `level_
 (150, 'CG000518', 'Marta Angelina', 29, 6, 'N-2', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa'),
 (151, 'CG000555', 'Meutia Ikawidjaja', 29, 6, 'N-2', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa'),
 (163, 'CG000429', 'Wahyudi', 26, 6, 'N-1', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa'),
-(164, 'CG000462', 'Gandi Hafissoma Ruskandar', 26, 6, 'N-1', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa');
+(164, 'CG000462', 'Gandi Hafissoma Ruskandar', 26, 6, 'N-1', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa'),
+(165, 'CG000415', 'Akhirul Kurniawan Akbar', 22, 5, 'N-1', '$2y$10$kFgZBXvMnfSeVvtUHkEHAO3c7NxLh98Cd.R6mmEKlB4BUleZe2/xa');
 
 -- --------------------------------------------------------
 
@@ -288,7 +289,8 @@ INSERT INTO `hasil_nilai` (`id`, `nik_self`, `nik_target`, `hub`, `jwb_1`, `jwb_
 (194, 'CG000619', 'CG000278', 'Peers', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (195, 'CG000619', 'CG000429', 'Peers', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (196, 'CG000619', 'CG000462', 'Peers', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(197, 'CG000518', 'CG000619', 'Subordinate', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+(197, 'CG000518', 'CG000619', 'Subordinate', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(198, 'CG000415', 'CG000520', 'Peers', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -353,13 +355,13 @@ ALTER TABLE `tbl_divisi`
 -- AUTO_INCREMENT untuk tabel `employe`
 --
 ALTER TABLE `employe`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
 
 --
 -- AUTO_INCREMENT untuk tabel `hasil_nilai`
 --
 ALTER TABLE `hasil_nilai`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=198;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_divisi`
