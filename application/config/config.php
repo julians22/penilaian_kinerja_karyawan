@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/penilaian/';
+// $config['base_url'] = 'http://192.168.19.140/penilaian/';
 
 /*
 |--------------------------------------------------------------------------

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/css/materialize.min.css'); ?>">
-    <link rel="shortcut icon" href="<?= base_url('assets/'); ?>img/icon2.ico">
+    <link rel="shortcut icon" href="<?= base_url('assets/'); ?>img/logo2.ico">
     <style>
     body {
         display: flex;

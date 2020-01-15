@@ -41,7 +41,8 @@ class Auth extends CI_Controller {
                     foreach ($target as $t) {
                             $array[] = [
                                 'nik_self' => $nik,
-                                'nik_target' => $t['nik']
+                                'nik_target' => $t['nik'],
+                                'hub' => 'Peers'
                             ];
                         }
                         $queryCek = $this->db->get_where('hasil_nilai', ['nik_self' => $nik]);
@@ -67,7 +68,8 @@ class Auth extends CI_Controller {
                         foreach ($target as $t) {
                             $array[] = [
                                 'nik_self' => $nik,
-                                'nik_target' => $t['nik']
+                                'nik_target' => $t['nik'],
+                                'hub' => 'Subordinate'
                             ];
                         }
                         $queryCek = $this->db->get_where('hasil_nilai', ['nik_self' => $nik]);
@@ -107,9 +109,9 @@ class Auth extends CI_Controller {
 
     public function logout()
     {
+        $data['title'] = "Thank You";
         $this->session->unset_userdata('nik');
-        $this->session->set_flashdata('message', '<a onload="M.toast({html: "I am a toast"})" class="btn red darken-1">Logout</a>');
-        redirect('auth');
+        $this->load->view('auth/logout');
     }
 
 }
