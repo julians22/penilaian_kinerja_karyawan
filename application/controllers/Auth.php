@@ -34,7 +34,7 @@ class Auth extends CI_Controller {
         $dept = $user['departement'];
 
         if ($user) {
-            if ($password = $user['password']) {
+            if ($password == $user['password']) {
                 if ($user['level_org'] === 'N-1') {
                     $query = "SELECT * FROM `employe` WHERE `level_org` = '$level' AND `divisi` = $div AND `nik` <> '$nik'";
                     $target = $this->db->query($query)->result_array();
