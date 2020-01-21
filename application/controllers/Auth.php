@@ -69,7 +69,7 @@ class Auth extends CI_Controller {
                             $array[] = [
                                 'nik_self' => $nik,
                                 'nik_target' => $t['nik'],
-                                'hub' => 'Subordinate'
+                                'hub' => 'Superior'
                             ];
                         }
                         $queryCek = $this->db->get_where('hasil_nilai', ['nik_self' => $nik]);
